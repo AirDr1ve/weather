@@ -9,13 +9,11 @@ export const WeatherToday = () => {
         <header >
             <h2 >Минск</h2>
             <div>
-                
                 <MainInfo />
                 <OtherInfo />
-                
+
             </div>
         </header>
     )
 }
 
-export default WeatherToday()

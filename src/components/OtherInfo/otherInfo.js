@@ -9,9 +9,9 @@ import { setProbabilityOfPrecipitation } from './setProbabilityOfPrecipitation';
 export const OtherInfo = ({ weatherNow }) => {
     return (
         <ul>
-            <li> Давление: {setPressure(weatherNow.main.grnd_level)} мм.рт.ст </li>
-            <li> Осадков: {setProbabilityOfPrecipitation(weatherNow.pop)}%</li>
-            <li> Влажность: {weatherNow.main.humidity}%</li>
+            <li> Атмосферное давление: {setPressure(weatherNow.main.grnd_level)} мм.рт.ст </li>
+            <li> {setProbabilityOfPrecipitation(weatherNow.pop)}</li>
+            <li> Относительная влажность: {weatherNow.main.humidity}%</li>
         </ul>
     )
 }

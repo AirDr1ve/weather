@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { saveListAction } from "../../actions/actions";
-import WeatherToday from '../Today/weatherToday';
+import { WeatherToday } from '../Today/weatherToday';
 
 const Main = ({ list, saveList }) => {
   useEffect(() => {
@@ -12,6 +12,7 @@ const Main = ({ list, saveList }) => {
           <h3>Waiting please...</h3>
       )
   }
+
   return (
           <WeatherToday />
   )
