@@ -1,6 +1,6 @@
  
 import React from 'react';
-// import './otherInfo.css';
+import './style.css';
 import { connect } from 'react-redux';
 import { setPressure } from './conversion'
 import { setProbabilityOfPrecipitation } from './setProbabilityOfPrecipitation';
@@ -8,11 +8,15 @@ import { setProbabilityOfPrecipitation } from './setProbabilityOfPrecipitation';
 
 export const OtherInfo = ({ weatherNow }) => {
     return (
-        <ul>
-            <li> Атмосферное давление: {setPressure(weatherNow.main.grnd_level)} мм.рт.ст </li>
-            <li> {setProbabilityOfPrecipitation(weatherNow.pop)}</li>
-            <li> Относительная влажность: {weatherNow.main.humidity}%</li>
+        
+        <ul className="other-info">
+            <li className="pressure"> Атмосферное давление: {setPressure(weatherNow.main.grnd_level)} мм.рт.ст </li>
+            <li className="pop"> {setProbabilityOfPrecipitation(weatherNow.pop)}</li>
+            <li className="humidity"> Относительная влажность: {weatherNow.main.humidity}%</li>
+            <li className="wind"> Cкорость ветра: {(weatherNow.wind.speed).toFixed(1)}м/с</li>
+
         </ul>
+        
     )
 }
 
@@ -22,6 +26,7 @@ export const OtherInfo = ({ weatherNow }) => {
 const mapStateToProps = (state) => {
     return {
         weatherNow: state.weatherNow,
+
     }    
 }
 

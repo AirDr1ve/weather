@@ -4,7 +4,7 @@ import { setTemp } from '../components/Today/setTemp';
 
 const initialState = {
     list: [],
-    weatherNow: null,
+    weatherNow: 0,
     listWeatherToday: [],
     minTempToday: 0,
     maxTempToday: 0,

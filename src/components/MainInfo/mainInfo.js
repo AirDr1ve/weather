@@ -1,5 +1,5 @@
 import React from 'react';
-import './mainInfo.css';
+import './style.css';
 import { connect } from 'react-redux';
 
 
@@ -7,9 +7,13 @@ import { connect } from 'react-redux';
 const MainInfo = ({ weatherNow, maxTempToday, minTempToday }) => {
     return (
         <div className="main-info">
-            <ul>
-                <li className="main-temp">Сейчас: {Math.round(weatherNow.main.temp)}°С</li>
-                <li className="average-temp">Днём: {Math.round(minTempToday)} - {Math.round(maxTempToday)}°С</li>
+            <ul className="main-temp-now">
+                <li className="temp-now">Сейчас: {Math.round(weatherNow.main.temp)}°С</li>
+            </ul>
+            <div className="main-icon" style={{backgroundImage: `url('http://openweathermap.org/img/wn/${weatherNow.weather[0].icon}@2x.png')`}} ></div>
+            <ul className="temp-today">
+                <li className="temp-today-max">{Math.round(maxTempToday)}°</li>
+                <li className="temp-today-min">{Math.round(minTempToday)}°</li>
             </ul>
         </div>
 

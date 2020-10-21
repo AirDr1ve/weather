@@ -1,0 +1,7 @@
+.main {
+    width: 1200px;
+    height: 600px;
+    margin: 55px auto;
+    display: flex;
+    background: linear-gradient(to top right, rgb(65, 112, 159), rgb(68, 109, 153))
+}

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
+import "./style.css";
 import { saveListAction } from "../../actions/actions";
 import { WeatherToday } from '../Today/weatherToday';
 
@@ -14,7 +15,10 @@ const Main = ({ list, saveList }) => {
   }
 
   return (
+      
+    <div className="main">
           <WeatherToday />
+    </div>
   )
 }
 
@@ -29,7 +33,8 @@ function mapDispatchToProps(dispatch) {
  const mapStateToProps = (state) => {
   return {
     list: state.list,
-    weatherNow: state.weatherNow 
+    weatherNow: state.weatherNow,
+
   };
  };
 
