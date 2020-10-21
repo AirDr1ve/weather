@@ -13,15 +13,12 @@ const Main = ({ list, saveList }) => {
           <h3>Waiting please...</h3>
       )
   }
-
-  return (
-      
+  return (    
     <div className="main">
           <WeatherToday />
     </div>
   )
 }
-
 function mapDispatchToProps(dispatch) {
     return {
         saveList: () => {
@@ -29,16 +26,11 @@ function mapDispatchToProps(dispatch) {
         }
     }
 }
-
  const mapStateToProps = (state) => {
   return {
     list: state.list,
     weatherNow: state.weatherNow,
-
   };
  };
-
-
-
 export default connect(mapStateToProps, mapDispatchToProps)(Main);
 

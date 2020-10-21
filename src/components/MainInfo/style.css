@@ -1,7 +1,6 @@
 .main-info{
     display: flex;
 }
-
 .temp-today-max{
     color: white;
     font-weight: bold;
@@ -10,39 +9,29 @@
     color: rgba(200, 200, 200, 0.8);
     font-weight: bold;
 }
-
 .main-temp {
     font-size: 72px;
     
     color: grey;
 }
-
-
-
 .main-temp-now{
     display: flex;
     margin-left: 40px;
     margin-top: 30px
 }
-
 .temp-now {
     font-size: 70px;
     color: white;
-    font-weight: bold;
-    
+    font-weight: bold; 
 }
-
 .temp-today{
     font-size: 70px;
     margin-left: 45px;
 }
-
 ul {
     display: block;
-    list-style-type: none;
-   
+    list-style-type: none; 
 }
-
 .main-icon{
     display: block;
     background-size: cover;

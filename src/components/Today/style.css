@@ -2,18 +2,14 @@
     padding: 0;
     margin: 0;
 }
-
 h2{
     margin: 0 auto;
 }
-
-
 .weather-info{
     display: flex;
     margin-top: 40px;
     
 }
-
 .header{
     width: 1200px;
     display: flex;

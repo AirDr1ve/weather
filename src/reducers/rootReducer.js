@@ -1,7 +1,5 @@
 import { setWeatherToday } from '../components/Today/setWeatherToday';
 import { setTemp } from '../components/Today/setTemp';
-
-
 const initialState = {
     list: [],
     weatherNow: 0,
@@ -9,10 +7,6 @@ const initialState = {
     minTempToday: 0,
     maxTempToday: 0,
 }
-
-
-
-
 export const rootReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'SAVE_LIST':

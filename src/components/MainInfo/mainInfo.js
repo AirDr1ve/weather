@@ -2,8 +2,6 @@ import React from 'react';
 import './style.css';
 import { connect } from 'react-redux';
 
-
-
 const MainInfo = ({ weatherNow, maxTempToday, minTempToday }) => {
     return (
         <div className="main-info">
@@ -16,10 +14,8 @@ const MainInfo = ({ weatherNow, maxTempToday, minTempToday }) => {
                 <li className="temp-today-min">{Math.round(minTempToday)}°</li>
             </ul>
         </div>
-
     )
 }
-
 const mapStateToProps = (state) => {
     return {
         weatherNow: state.weatherNow,
@@ -27,5 +23,4 @@ const mapStateToProps = (state) => {
         maxTempToday: state.maxTempToday,
     }
 }
-
 export default connect(mapStateToProps)(MainInfo);

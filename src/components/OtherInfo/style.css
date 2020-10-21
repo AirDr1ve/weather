@@ -1,17 +1,16 @@
 .other-info{
-    padding-left: 75px;
-    margin-left: 75px;
+    padding-left: 35px;
+    margin-left: 35px;
     margin-top: 30px;
     border-left: 1px solid rgb(69, 85, 110);
     box-shadow: -2px 0px 0px 0px rgba(108,126,149,1);
     font-size: 20px;
     color: rgba(200, 200, 200, 0.8);
+    font-weight: 700;
 }
-
 .pressure{
     flex-wrap: nowrap;
 }
-
 .other-info li {
     padding-bottom: 10px
 }
