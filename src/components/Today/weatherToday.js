@@ -2,6 +2,10 @@ import React from 'react';
 import './style.css';
 import OtherInfo from '../OtherInfo/otherInfo';
 import MainInfo from '../MainInfo/mainInfo';
+import   EveryHourlyInfo  from '../Hourly/EveryHourlyInfo';
+import   { get }  from '../EveryDay/setEveyDayWeather';
+
+
 
 export const WeatherToday = () => {
   const date = new Date().toLocaleString('ru', {
@@ -18,6 +22,8 @@ export const WeatherToday = () => {
             <div className='weather-info'>
                 <MainInfo />
                 <OtherInfo />
+                <EveryHourlyInfo />
+        <get />
             </div>
         </section>
     )

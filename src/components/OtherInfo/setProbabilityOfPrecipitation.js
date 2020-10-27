@@ -1,8 +1,5 @@
 export const setProbabilityOfPrecipitation = (pop) => {
-    let result = pop * 100;
-    if(result === 0){
-        result = 'Осадков не ожидается'
-    }
-    else result = "Вероятность осадков: " + pop * 100  + '%';
-    return result ;
+    let result
+    return result = (pop * 100 === 0) ? 'Осадков не ожидается' : "Вероятность осадков: " + pop * 100  + '%'    
+    
 }

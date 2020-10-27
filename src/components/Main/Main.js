@@ -29,6 +29,7 @@ function mapDispatchToProps(dispatch) {
  const mapStateToProps = (state) => {
   return {
     list: state.list,
+      city: state.city,
     weatherNow: state.weatherNow,
   };
  };
